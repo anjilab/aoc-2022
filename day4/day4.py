@@ -11,7 +11,13 @@ with open('day4.txt') as f:
 
         range1 = list(range(int(group_range1[0]), int(group_range1[1])+1))
         range2 = list(range(int(group_range2[0]), int(group_range2[1])+1))
-
+        # Part 1
+        # if all([item in range1 for item in range2]):
+        #     pair = pair + 1
+        # else:
+        #     if all([item in range2 for item in range1]):
+        #         pair = pair + 1
+        #  Part 2
         if any([item in range1 for item in range2]):
             pair = pair + 1
         else:
